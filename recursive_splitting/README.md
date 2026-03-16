@@ -1,4 +1,4 @@
-# 再帰的分割（Recursive Character Splitting）デモ
+# 再帰的分割（Recursive Character Splitting）
 
 RAGシステムで最もよく使われるチャンク化手法、**再帰的分割**の仕組みを実際に動かして理解するためのデモノートブックです。
 
