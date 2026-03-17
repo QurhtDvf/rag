@@ -14,7 +14,7 @@
 
 質問の複雑さ（ホップ数）に応じて、Neo4j へ投げられる Cypher クエリ数が増加します。クエリの分解はすべてアプリ層（Ollama）が担い、Neo4j は受け取ったクエリを1件ずつ実行するだけです。
 
-![Graph RAG クエリ数比較](download-4.png)
+![Graph RAG クエリ数比較](/image/download-4.png)
 
 ---
 
