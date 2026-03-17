@@ -1,4 +1,4 @@
-# 🔗 Graph RAG Demo — Neo4j + Ollama on Google Colab
+# 🔗 Graph RAG Demo — Neo4j + Ollama
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourname/graph-rag-demo/blob/main/graph_rag_neo4j_ollama_v2.ipynb)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
