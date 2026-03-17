@@ -1,5 +1,5 @@
 # 🔗 Graph RAG デモ — スキーマ自動取得版
-## Neo4j + Ollama on Google Colab（完全ローカル）
+## Neo4j + Ollama（完全ローカル）
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourname/graph-rag-demo/blob/main/graph_rag_auto_schema.ipynb)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
@@ -20,7 +20,6 @@
 
 質問のホップ数に応じて Neo4j へのクエリ数が増加します。クエリ分解はすべてアプリ層（Ollama）が担い、Neo4j は1件ずつ受け取るだけです。
 
-![Graph RAG クエリ数比較](graph_rag_auto_schema_result.png)
 
 | 質問 | ホップ数 | Neo4j クエリ数 |
 |---|---|---|
