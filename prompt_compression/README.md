@@ -45,11 +45,9 @@ Transformerのattention重みを利用し、重要度の低いトークンを削
 
 - ROUGEスコア（内容保持）
 - embedding類似度（意味保持）
-
 最終的に最もスコアの高い圧縮結果が選択され、LLMに入力される。
 ---
 
-## Architecture
 ## Architecture
 
 ```text
