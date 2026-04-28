@@ -154,7 +154,7 @@ $$
 P(t|nR) = \frac{df_t + \texttt{pseudo\_count\_nr}}{N + 2 \cdot \texttt{pseudo\_count\_nr}}
 $$
 
-    *   $df_t$: 用語 $t$ を含む文書の数 (document frequency)
+$df_t$: 用語 $t$ を含む文書の数 (document frequency)
     *   $N$: 全文書数
     *   `pseudo_count_nr`: 非関連文書における擬似カウント（一般的には $0.5$ など）
 
