@@ -106,11 +106,13 @@ python bim_model_japanese.py
 BIMの目標は、与えられたクエリ $Q$ に対して文書 $D$ が関連する確率 $P(R|D, Q)$ を推定することです。ベイズの定理と上記の仮定を用いて、ランキング関数は以下のように導出されます。
 
 まず、関連性オッズ $O(R|D, Q)$ を考えます。
+
 $$
 O(R|D, Q) = \frac{P(R|D, Q)}{P(nR|D, Q)}
 $$
 
 各用語が独立であるという仮定のもと、このオッズは以下のように分解できます。
+
 $$
 O(R|D, Q) = O(R) \cdot \prod_{t \in Q \cap D} \frac{P(t|R)}{P(t|nR)} \cdot \prod_{t \in Q \setminus D} \frac{P(\neg t|R)}{P(\neg t|nR)}
 $$
