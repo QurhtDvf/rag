@@ -149,9 +149,9 @@ P(t|R) = \frac{\texttt{relevant\_docs\_with\_term\_t} + \texttt{pseudo\_count\_r
 $$
     *   関連文書が不明な初期段階では、`pseudo_count_r` を小さく設定し、`relevant_docs_total` を特定の定数と仮定することで、全ての用語に対して $P(t|R) = 0.5$ となるようにします（例: `pseudo_count_r=0.5` とすれば $0.5 / (0.5+0.5) = 0.5$）。
 *   **$P(t|nR)$ (非関連文書に出現する確率)**: これは、全文書コレクションにおける用語の出現頻度から推定されます。
-    *   $$
+    *   $
 P(t|nR) = \frac{df_t + \texttt{pseudo\_count\_nr}}{N + 2 \cdot \texttt{pseudo\_count\_nr}}
-$$
+$
     *   $df_t$: 用語 $t$ を含む文書の数 (document frequency)
     *   $N$: 全文書数
     *   `pseudo_count_nr`: 非関連文書における擬似カウント（一般的には $0.5$ など）
