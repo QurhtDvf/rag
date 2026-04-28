@@ -144,12 +144,12 @@ $$
 BIMを初期段階で適用する際、関連文書に関する情報（つまり $P(t|R)$）は通常未知です。そのため、ヒューリスティックな推定値や擬似カウント (pseudo-counts) が使用されます。
 
 *   **$P(t|R)$ (関連文書に出現する確率)**: 関連性フィードバックがない場合、初期推定として $0.5$ を使用したり、擬似カウント $(0.5 + \text{擬似カウント})$ を用いることがあります。これは、すべてのクエリ用語が関連文書に均等に出現する可能性があるという仮定に基づきます。
-    *   $$
+$$
 P(t|R) = \frac{\text{relevant\_docs\_with\_term\_t} + \text{pseudo\_count\_r}}{\text{relevant\_docs\_total} + 2 \cdot \text{pseudo\_count\_r}}
 $$
     *   関連文書が不明な初期段階では、`pseudo_count_r` を小さく設定し、`relevant_docs_total` を特定の定数と仮定することで、全ての用語に対して $P(t|R) = 0.5$ となるようにします（例: `pseudo_count_r=0.5` とすれば $0.5 / (0.5+0.5) = 0.5$）。
 *   **$P(t|nR)$ (非関連文書に出現する確率)**: これは、全文書コレクションにおける用語の出現頻度から推定されます。
-    *   $$
+$$    
 P(t|nR) = \frac{df_t + \text{pseudo\_count\_nr}}{N + 2 \cdot \text{pseudo\_count\_nr}}
 $$
     *   $df_t$: 用語 $t$ を含む文書の数 (document frequency)
